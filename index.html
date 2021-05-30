@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 	-->
 	
-	<link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
 	<!--Replace with your tailwind.css once created-->
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
@@ -30,11 +30,13 @@
 		.slide-in-bottom-subtitle{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .75s both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .75s both}
 		.fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both}
 		.bounce-top-icons{-webkit-animation:bounce-top .9s 1s both;animation:bounce-top .9s 1s both}
-		
+		.scale-in-center{-webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both}
+
 		@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 		@-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
 		@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
-				
+		@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
 	</style>
 
 </head>
@@ -51,7 +53,7 @@
 			</a>
 			
 			<div class="flex w-1/2 justify-end content-center">
-				<a class="inline-block text-indigo-600 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#featrues">
+				<a class="inline-block text-indigo-600 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#features">
 					功能特点
 				</a>
 				<a class="inline-block text-indigo-600 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#">
@@ -64,7 +66,7 @@
 	</section>
 
 	<!--Main-->
-	<section class="py-12 bg-right bg-cover" style="background-image:url('bg.svg');">
+	<section class="py-12 bg-no-repeat bg-right bg-contain" style="background-image:url('bg.svg');">
 		<div class="container pt-24 md:pt-36 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 			
 			<!--Left Col-->
@@ -98,13 +100,13 @@
 	</section>
 
 	<!--Features-->
-	<section class="py-12 bg-gray-100" id="featrues">
+	<section class="py-12 bg-gray-100" id="features">
 		<div class="container mx-auto">
 			<h2 class="w-full my-2 text-4xl font-black leading-tight text-center text-gray-800">
 				功能特点
 			</h2>
 			<div class="w-full mb-8">
-				<div class="h-1 mx-auto bg-blue-400 w-56 my-0 py-0 rounded"></div>
+				<div class="h-1 mx-auto bg-blue-400 w-56 my-0 py-0"></div>
 			</div>
 
 			<div class="flex flex-wrap">
@@ -146,35 +148,35 @@
 				用户评价
 			</h2>
 			<div class="w-full mb-8">
-				<div class="h-1 mx-auto bg-blue-400 w-56 my-0 py-0 rounded"></div>
+				<div class="h-1 mx-auto bg-blue-400 w-56 my-0 py-0"></div>
 			</div>
 
 			<div class="w-full md:w-1/3 p-6">
-				<div class="h-64 p-6 bg-blue-200 rounded shadow-md">
+				<div class="h-64 p-6 bg-gray-100 rounded-md shadow-md scale-in-center">
 					<p class="text-blue-600 text-lg mb-4">
-						国内部 刘某某
+						国内部 刘老师
 					</p>
 					<p class="text-gray-600 text-lg mb-4">
-						智能照片库非常好用。
+						智能照片库非常好用。帮我解决了海量的照片资源。点赞。👍
 					</p>
 				</div>
 			</div>
 
 			<div class="w-full md:w-1/3 p-6">
-				<div class="h-64 p-6 bg-blue-200 rounded shadow-md">
+				<div class="h-64 p-6 bg-gray-100 rounded-md shadow-md scale-in-center">
 					<p class="text-blue-600 text-lg mb-4">
-						国内部 刘某某
+						国内部 赵老师
 					</p>
 					<p class="text-gray-600 text-lg mb-4">
-						智能照片库非常好用。
+						智能照片库非常好用，加油！
 					</p>
 				</div>
 			</div>
 
 			<div class="w-full md:w-1/3 p-6">
-				<div class="h-64 p-6 bg-blue-200 rounded shadow-md">
+				<div class="h-64 p-6 bg-gray-100 rounded-md shadow-md scale-in-center">
 					<p class="text-blue-600 text-lg mb-4">
-						国内部 刘某某
+						国内部 张老师
 					</p>
 					<p class="text-gray-600 text-lg mb-4">
 						智能照片库非常好用。
