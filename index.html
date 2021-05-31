@@ -9,11 +9,12 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
+	<link rel="shortcut icon" href="./images/app-icon.png" type="image/x-icon">
 	<!-- Font Awesome if you need it
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 	-->
 	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
 	<!--Replace with your tailwind.css once created-->
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
@@ -49,14 +50,15 @@
 
 		<div class="w-full flex items-center justify-between">
 			<a class="flex items-center text-indigo-800 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-				 <svg class="h-8 fill-current text-indigo-800 pr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-5.6-4.29a9.95 9.95 0 0 1 11.2 0 8 8 0 1 0-11.2 0zm6.12-7.64l3.02-3.02 1.41 1.41-3.02 3.02a2 2 0 1 1-1.41-1.41z"/></svg> 智能照片库
+				<img class="h-10 fill-current text-indigo-800 pr-2" src="./images/app-icon.png">
+				智能照片库
 			</a>
 			
 			<div class="flex w-1/2 justify-end content-center">
 				<a class="inline-block text-indigo-600 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#features">
 					功能特点
 				</a>
-				<a class="inline-block text-indigo-600 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#">
+				<a class="inline-block text-indigo-600 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#testimonials">
 					用户评价
 				</a>
 			</div>
@@ -66,7 +68,7 @@
 	</section>
 
 	<!--Main-->
-	<section class="py-12 bg-no-repeat bg-right bg-contain" style="background-image:url('bg.svg');">
+	<section class="py-12 bg-no-repeat bg-right bg-contain" style="background-image:url('./images/background.svg');">
 		<div class="container pt-24 md:pt-36 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 			
 			<!--Left Col-->
@@ -79,7 +81,7 @@
 
 				<div class="flex w-full justify-center md:justify-start mb-8 lg:mb-6 fade-in">
 					<div class="inline-flex rounded-md shadow bounce-top-icons">
-						<a href="#" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+						<a href="./download/photos-library_setup_0.1.0.exe" download="Photos-Library Setup 0.1.0.exe" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
 							下载 Windows 版
 						</a>
 					</div>
@@ -94,12 +96,12 @@
 			
 			<!--Right Col-->
 			<div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
-				<img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="./screenshoot-1.png">
+				<img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="./images/screenshoot-1.png">
 			</div>
 		</div>
 	</section>
 
-	<!--Features-->
+	<!--
 	<section class="py-12 bg-gray-100" id="features">
 		<div class="container mx-auto">
 			<h2 class="w-full my-2 text-4xl font-black leading-tight text-center text-gray-800">
@@ -120,13 +122,13 @@
 					</p>
 				</div>
 				<div class="w-full sm:w-1/2 px-6">
-					<img class="w-full mx-auto" src="./screenshoot-1.png">
+					<img class="w-full mx-auto" src="./images/screenshoot-1.png">
 				</div>
 			</div>
 
 			<div class="flex flex-wrap">
 				<div class="w-full sm:w-1/2 px-6">
-					<img class="w-full mx-auto" src="./screenshoot-1.png">
+					<img class="w-full mx-auto" src="./images/screenshoot-1.png">
 				</div>
 				<div class="w-5/6 sm:w-1/2 px-6 py-12">
 					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-6">
@@ -142,7 +144,7 @@
 		</div>
 	</section>
 
-	<section class="py-12 bg-white border-b">
+	<section class="py-12 bg-white border-b" id="testimonials">
 		<div class="container mx-auto flex flex-wrap">
 			<h2 class="w-full my-2 text-4xl font-black leading-tight text-center text-gray-800">
 				用户评价
@@ -185,6 +187,7 @@
 			</div>
 		</div>
 	</section>
+	-->
 
 	<!--Footer-->
 	<section class="py-8">
